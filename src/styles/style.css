@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+/*400, 700*/
+@font-face {
+    font-family: over;
+    src: url(../fonts/Overpass-VariableFont_wght.ttf);
+    font-size: 15px;
+}
+
+:root{
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --LightGrey: hsl(217, 12%, 63%);
+    --MediumGrey: hsl(216, 12%, 54%);
+    --DarkBlue: hsl(213, 19%, 18%);
+    --VeryDarkBlue: hsl(216, 12%, 8%);
+    --baixo:#181d25;
+    --cima:#232934;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--VeryDarkBlue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: over;
+}
+
+.container{
+    background-image: linear-gradient(#232934,#181d25);
+    border-radius: 20px;
+    width: 400px;
+    display: flex;
+    align-items: start;
+    padding: 30px;
+    margin-top: 200px;
+
+}
+
+.outra{
+    display: none;
+}
+
+.star{
+    background-color: var(--DarkBlue);
+    width: 45px;
+    height: 45px;
+    border-radius: 22.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    color: var(--White);
+    margin-top: 25px;
+}
+
+p{
+    color: var(--LightGrey);
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 15px;
+}
+
+.botao{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.botao button{
+    border: none;
+    background-color: var(--DarkBlue);
+    color: var(--LightGrey);
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    margin-top: 20px;
+    font-family: over;
+    font-weight: 700;
+}
+
+.submit{
+    border: none;
+    width: 100%;
+    margin-top: 30px;
+    padding: 15px;
+    border-radius: 30px;
+    background-color: var(--Orange);
+    color: var(--White);
+    font-weight: 700;
+    font-family: over;
+}
+
+.submit:hover{
+    cursor: pointer;
+    background-color: var(--White);
+    color: var(--Orange);
+    transition: 0.5s ease;
+}
+
+.botao button:hover{
+    cursor: pointer;
+    background-color: var(--LightGrey);
+    color: var(--White);
+    transition: 0.5s ease;
+}
+
+
