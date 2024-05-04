@@ -36,8 +36,6 @@ body{
     background-image: linear-gradient(#232934,#181d25);
     border-radius: 20px;
     width: 400px;
-    display: flex;
-    align-items: start;
     padding: 30px;
     margin-top: 200px;
 
@@ -45,6 +43,33 @@ body{
 
 .outra{
     display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.selected{
+    background-color: var(--DarkBlue);
+    padding: 5px 20px;
+    border-radius: 20px;
+    margin-top: 25px;
+    color: var(--Orange);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+}
+
+.outra p{
+    text-align: center;
+    line-height: 25px;
+}
+
+.principal{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
 }
 
 .star{
@@ -74,6 +99,7 @@ p{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    gap: 22px;
 }
 
 .botao button{
@@ -86,7 +112,9 @@ p{
     margin-top: 20px;
     font-family: over;
     font-weight: 700;
+    transition: 0.5s ease;
 }
+
 
 .submit{
     border: none;
@@ -98,20 +126,26 @@ p{
     color: var(--White);
     font-weight: 700;
     font-family: over;
+    transition: 0.5s ease;
 }
 
 .submit:hover{
     cursor: pointer;
     background-color: var(--White);
     color: var(--Orange);
-    transition: 0.5s ease;
 }
 
 .botao button:hover{
     cursor: pointer;
     background-color: var(--LightGrey);
     color: var(--White);
-    transition: 0.5s ease;
 }
 
+.botao button:focus{
+    background-color: var(--Orange);
+    color: var(--White);
+}
 
+span{
+    margin-inline: 3px;
+}
